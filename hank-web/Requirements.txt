@@ -1,0 +1,5 @@
+flask
+ChatterBot
+Spacy
+Numpy
+chatterBot-corpus
