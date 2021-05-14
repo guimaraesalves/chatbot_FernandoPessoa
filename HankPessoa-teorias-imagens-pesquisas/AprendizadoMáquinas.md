@@ -1,33 +1,43 @@
-![matrix](Matrix_Pilulas.png)
+![Matrix_Pilulas](/home/mateus/Imagens/Matrix_Pilulas.png)
 
 
 
 # Capítulo 10 - Machine Learning - DSA
 
 ## 10.1 - Introdução a Machine Learning
+
 <hr>
 
+
 ## 10.2 - O que é Aprendizado de Máquina?
+
 <hr>
+
 
 
 ### Conceitos de Aprendizagem
 
 >Koogan/Houaiss:
-"Aprendizagem-Ação de aprender..."
-"Aprender- adquirir o conhecimento de, ficar sabendo, instruir-se ..."
+>"Aprendizagem-Ação de aprender..."
+>"Aprender- adquirir o conhecimento de, ficar sabendo, instruir-se ..."
+
 <p>
+
 
 Aprendizado é a capacidade de se adaptar, modificar e melhorar seu comportamento e suas respostas, sendo uma das propriedades mais importantes dos seres ditos inteligentes, sejam eles humanos ou não.
+
 <p>
 
+
 "...psicol.-Método que consiste em estabelecer conexões entre certos estímulos e determinadas respostas, cujo resultado é aumentar a adaptação do ser ao seu ambiente"
+
 <p>
 "Aprendizagem é o processo cognitivo que se estabelece entre o organismo e os estímulos emitidos pelo meio ambiente. 
 Assimilação de informações: aprendizado."
 Filme: O Enigma de Kaspar Hauser".
 <p>
 <p>
+
 
 **Adaptação** >> **Correção** >> **Otimização** >> **Representação** >> **Interação**
 
@@ -43,7 +53,9 @@ Filme: O Enigma de Kaspar Hauser".
 **__Estamos tentando reproduzir o processo de aprendizado de seres humanos em máquinas, através de algoritmos de Machine Learning.__**
 
 ## 10.3 - O que é Aprendizado de Máquinas?
+
 <hr>
+
 
 Machine Learning é Matemática, Estatística e Programação de Computadores!
 
@@ -56,7 +68,9 @@ Machine Learning é Matemática, Estatística e Programação de Computadores!
 
 
 ##  10.4 - Inteligência Artificial x Machine Learning x Deep Learning.
+
 <hr>
+
 
 <img src="https://miro.medium.com/max/1634/0*iqMgyPf5WToHHoS6.png" alt="Deep Learning: do Conceito às Aplicações | by Marlesson Santana | Data  Hackers | Medium" style="zoom: 50%;" />
 
@@ -73,7 +87,9 @@ _Conjunto de redes neurais artificiais_
 
 
 ## 10.5 - Tipos de Aprendizagem de Máquina
+
 <hr>
+
 
 * Aprendizado de Máquina:
   * Aprendizagem Supervisionada;
@@ -86,10 +102,10 @@ _Conjunto de redes neurais artificiais_
 
 
 
-Aprendizagem Supervisionada		| Aprendizagem não Supervisionada 
-:------------		| :------------
-Previsão de valores ou classes;	| Identificação de grupos (clusters) de dados; 
-Os dados de treino precisam conter os valores de entrada e saída, para que o modelo aprenda como, a partir de novos dados de entrada, gerar a saída correta.	| Os dados de treino contém apenas entrada; 
+| Aprendizagem Supervisionada                                  | Aprendizagem não Supervisionada              |
+| ------------------------------------------------------------ | :------------------------------------------- |
+| Previsão de valores ou classes;                              | Identificação de grupos (clusters) de dados; |
+| Os dados de treino precisam conter os valores de entrada e saída, para que o modelo aprenda como, a partir de novos dados de entrada, gerar a saída correta. | Os dados de treino contém apenas entrada;    |
 
 
 
@@ -98,6 +114,7 @@ Os dados de treino precisam conter os valores de entrada e saída, para que o mo
 ## 10.7- Aprendizagem Supervionada - Parte 2/2
 
 <hr>
+
 
 O Algoritmo aprende a partir dos Dados de exemplo, (dados de entrada) e possíveis resultados (dados de saída), podendo ser valores quantitativos e valores qualitativos. A fim de prever a resposta correta quando recebe novos conjuntos de dados.
 
@@ -144,6 +161,7 @@ Análise de Sentimentos é um tipo de classificação, ou seja, aprendizagem sup
 ## 10.8 - Aprendizagem Não Supervisionada
 
 <hr>
+
 
 O **Algoritmo** aprende com os dados de entrada mas sem qualquer resposta associada;
 
@@ -214,6 +232,143 @@ O processo de aprendizagem dos algoritmos de Machine Learn começa com a criaç�
 
 
 ## 10.12 - Modelo Preditivo Um Pouco de Matemática
+
+Modelo Preditivo é uma função matemática que, aplicada a uma massa de dados, consegue identificar padrões ocultos e prever o que poderá ocorrer.
+
+* Regressor ou Classificador: são funções matemáticas;
+
+O que é um processo estocástico? 
+
+é um Fenômeno que varia em algum grau, de forma imprevisível, à medida que o tempo passa!
+
+exemplos:
+
+*  Variação do tráfego em um cruzamento;
+*  Variação diária no tamanho do estoque de uma empresa;
+*  Variação minuto a minuto do índice IBOVESPA;
+*  Variação no estado de um sistema de potência;
+*  Variação no número de chamadas feitas a uma central telefônica.
+
+**O objetivo do aprendizado de máquina é aprender a aproximação da função f que melhor representa a relação entre os atributos de entrada (chamadas variáveis preditoras) com a variável de saída (chamada de variável target).**
+
+## 10.13 - O Processo de Aprendizagem
+
+Um componente chave do processo de aprendizagem é a generalização.
+
+> Se um algoritmo de Machine Learning não for capaz de generalizar uma função matemática que faça previsões sobre novos conjuntos de dados, ele não está aprendendo nada e sim memorizando os dados, o que é bem diferente.
+
+Para poder generalizar a função que melhor resolve o problema, os algoritmos de Machine Learning se baseiam em 3 componentes:
+
+* **Representação**
+  * Cira um modelo que produz um resultado para um conjunto específico de Inputs;
+  * A **Representação** é um conjunto de modelos que o algoritmo pode aprender;
+* **Avaliação**
+  * Determina que modelo funciona melhor para criar o resultado esperado
+  * O algoritmo de machine learning faz a avaliação dos modelos gerados por ele mesmo e atribui pontos pois mais de um modelo pode resolver o mesmo problema. Cada modelo recebe uma pontuação - score - que ajuda a determinar o melhor modelo  ser utilizado.
+* **Otimização**
+  * O conjunto de modelos que produzem o resultado correto dado o conjunto de dados de entrada.
+  * O processo de treinamento busca entre os modelos o que melhor resolve o problema em questão, sendo o melhor modelo utilizado.
+  * Existem diversas técnicas de utilização do modelo proposto para o aprendizado
+
+Os algoritmos de Machine Learning possuem diversos parâmetros internos (valores separados em vetores e matrizes), que funcionam como referência para o algoritmo, permitindo que o mapeamento ocorra.
+
+Todas as funções estão no que chamamos de " espaço de hipótese"  que precisa conter todas as variações nos parâmetros  no algoritmos de ML, precisa conter a função que resolve o problema em questão.
+
+O modelo de Machine Learning é composto por Espaços de hipóteses e o algoritmo de aprendizagem;
+
+**Espaço de Hipótese**
+
+Durante a fase de otimização os algoritmos buscam as possíveis variações e combinações entre os parâmetros de forma a encontrar a melhor combinação para o correto mapeamento durante a fase de treino. encontrar o relacionamento matemático entre os dados de entrada e saída.
+
+
+
+## 10.13 - Cost Function
+
+<hr>
+
+
+Função interna do algoritmo ou função de custo, função de perda, função objetivo ou apenas função de erro. Determina o quão bem o algoritmo executa aquilo que foi proposto.
+
+
+
+## 10.14 - Overfitting x Underfitting
+
+<hr>
+
+
+Quando o mapeamento de dados se tornam mais complexos erros nas previsões (overfitting) e (Underfitting);
+
+Para atingir o equilibrio devemos escolher entre a simplicidade e a complexidade;
+
+
+
+## 10.15 - Elementos do Processo de Aprendizagem
+
+<hr>
+
+
+
+
+
+
+## 10.16 - Espaço de hipóteses
+
+## 10.17 - Algoritmos de Machine Learning
+
+## 10.18 - Machine Learning Workflow
+
+## 10.19 - Business Problem - Definindo o Problema de Negócio
+
+
+
+
+
+
+
+
+
+​				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
