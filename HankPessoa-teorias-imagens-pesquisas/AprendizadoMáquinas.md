@@ -1,3 +1,5 @@
+
+
 ![Matrix_Pilulas](/home/mateus/Imagens/Matrix_Pilulas.png)
 
 
@@ -5,39 +7,29 @@
 # Capítulo 10 - Machine Learning - DSA
 
 ## 10.1 - Introdução a Machine Learning
-
 <hr>
-
 
 ## 10.2 - O que é Aprendizado de Máquina?
-
 <hr>
-
 
 
 ### Conceitos de Aprendizagem
 
 >Koogan/Houaiss:
->"Aprendizagem-Ação de aprender..."
->"Aprender- adquirir o conhecimento de, ficar sabendo, instruir-se ..."
-
+"Aprendizagem-Ação de aprender..."
+"Aprender- adquirir o conhecimento de, ficar sabendo, instruir-se ..."
 <p>
-
 
 Aprendizado é a capacidade de se adaptar, modificar e melhorar seu comportamento e suas respostas, sendo uma das propriedades mais importantes dos seres ditos inteligentes, sejam eles humanos ou não.
-
 <p>
 
-
 "...psicol.-Método que consiste em estabelecer conexões entre certos estímulos e determinadas respostas, cujo resultado é aumentar a adaptação do ser ao seu ambiente"
-
 <p>
 "Aprendizagem é o processo cognitivo que se estabelece entre o organismo e os estímulos emitidos pelo meio ambiente. 
 Assimilação de informações: aprendizado."
 Filme: O Enigma de Kaspar Hauser".
 <p>
 <p>
-
 
 **Adaptação** >> **Correção** >> **Otimização** >> **Representação** >> **Interação**
 
@@ -53,9 +45,7 @@ Filme: O Enigma de Kaspar Hauser".
 **__Estamos tentando reproduzir o processo de aprendizado de seres humanos em máquinas, através de algoritmos de Machine Learning.__**
 
 ## 10.3 - O que é Aprendizado de Máquinas?
-
 <hr>
-
 
 Machine Learning é Matemática, Estatística e Programação de Computadores!
 
@@ -68,9 +58,7 @@ Machine Learning é Matemática, Estatística e Programação de Computadores!
 
 
 ##  10.4 - Inteligência Artificial x Machine Learning x Deep Learning.
-
 <hr>
-
 
 <img src="https://miro.medium.com/max/1634/0*iqMgyPf5WToHHoS6.png" alt="Deep Learning: do Conceito às Aplicações | by Marlesson Santana | Data  Hackers | Medium" style="zoom: 50%;" />
 
@@ -87,9 +75,7 @@ _Conjunto de redes neurais artificiais_
 
 
 ## 10.5 - Tipos de Aprendizagem de Máquina
-
 <hr>
-
 
 * Aprendizado de Máquina:
   * Aprendizagem Supervisionada;
@@ -102,10 +88,10 @@ _Conjunto de redes neurais artificiais_
 
 
 
-| Aprendizagem Supervisionada                                  | Aprendizagem não Supervisionada              |
-| ------------------------------------------------------------ | :------------------------------------------- |
-| Previsão de valores ou classes;                              | Identificação de grupos (clusters) de dados; |
-| Os dados de treino precisam conter os valores de entrada e saída, para que o modelo aprenda como, a partir de novos dados de entrada, gerar a saída correta. | Os dados de treino contém apenas entrada;    |
+Aprendizagem Supervisionada		| Aprendizagem não Supervisionada 
+:------------		| :------------
+Previsão de valores ou classes;	| Identificação de grupos (clusters) de dados; 
+Os dados de treino precisam conter os valores de entrada e saída, para que o modelo aprenda como, a partir de novos dados de entrada, gerar a saída correta.	| Os dados de treino contém apenas entrada; 
 
 
 
@@ -114,7 +100,6 @@ _Conjunto de redes neurais artificiais_
 ## 10.7- Aprendizagem Supervionada - Parte 2/2
 
 <hr>
-
 
 O Algoritmo aprende a partir dos Dados de exemplo, (dados de entrada) e possíveis resultados (dados de saída), podendo ser valores quantitativos e valores qualitativos. A fim de prever a resposta correta quando recebe novos conjuntos de dados.
 
@@ -161,7 +146,6 @@ Análise de Sentimentos é um tipo de classificação, ou seja, aprendizagem sup
 ## 10.8 - Aprendizagem Não Supervisionada
 
 <hr>
-
 
 O **Algoritmo** aprende com os dados de entrada mas sem qualquer resposta associada;
 
@@ -244,10 +228,10 @@ O que é um processo estocástico?
 exemplos:
 
 *  Variação do tráfego em um cruzamento;
-*  Variação diária no tamanho do estoque de uma empresa;
-*  Variação minuto a minuto do índice IBOVESPA;
-*  Variação no estado de um sistema de potência;
-*  Variação no número de chamadas feitas a uma central telefônica.
+* Variação diária no tamanho do estoque de uma empresa;
+* Variação minuto a minuto do índice IBOVESPA;
+* Variação no estado de um sistema de potência;
+* Variação no número de chamadas feitas a uma central telefônica.
 
 **O objetivo do aprendizado de máquina é aprender a aproximação da função f que melhor representa a relação entre os atributos de entrada (chamadas variáveis preditoras) com a variável de saída (chamada de variável target).**
 
@@ -286,7 +270,6 @@ Durante a fase de otimização os algoritmos buscam as possíveis variações e 
 
 <hr>
 
-
 Função interna do algoritmo ou função de custo, função de perda, função objetivo ou apenas função de erro. Determina o quão bem o algoritmo executa aquilo que foi proposto.
 
 
@@ -294,7 +277,6 @@ Função interna do algoritmo ou função de custo, função de perda, função 
 ## 10.14 - Overfitting x Underfitting
 
 <hr>
-
 
 Quando o mapeamento de dados se tornam mais complexos erros nas previsões (overfitting) e (Underfitting);
 
@@ -305,7 +287,40 @@ Para atingir o equilibrio devemos escolher entre a simplicidade e a complexidade
 ## 10.15 - Elementos do Processo de Aprendizagem
 
 <hr>
+Para que ocorra a aprendizagem, é preciso que:
 
+* Um padrão exista
+* Não exista um único modelo matemático que explique esse padrão
+* Dados estejam disponíveis
+
+Variáveis preditoras: Dados de entrada;
+
+Exemplo aprovação de Crédito de um Indivíduo.
+
+| Atributo              | Valor        |
+| --------------------- | ------------ |
+| Sexo                  | Masculino    |
+| Idade                 | 34           |
+| Salário Mensal        | R$ 18.000,00 |
+| Anos no Emprego Atual | 3            |
+| Anos de Residência    | 7            |
+| Saldo Bancário        | R$ 32.671,94 |
+
+
+
+* Elementos do processo de aprendizagem:
+
+  * **Input**   _x_  {Dados do cliente} - variavel preditora
+  * **Output**   _y_  {Decisão -> Crédito: Sim/Não} - variável target
+  * **Função Alvo**  f: _x_ -> _y_  {Representação do relacionamento}{Função matemática desconhecida}
+  * **Dados** (x¹, y¹), (x², y²), ... , (Xn, Yn) {Dados históricos}
+  * **Hipótese**  g: _x_ -> _y_   {Função a ser descoberta pelo algoritmo}
+
+  
+
+  ![2021-05-15-10-09-www.datascienceacademy.com.br](/home/mateus/Downloads/2021-05-15-10-09-www.datascienceacademy.com.br.png)
+
+  
 
 
 
@@ -313,94 +328,127 @@ Para atingir o equilibrio devemos escolher entre a simplicidade e a complexidade
 
 ## 10.16 - Espaço de hipóteses
 
+<hr> 
+
+O modelo de aprendizagem possui duas partes:
+
+* Espaço de Hipóteses:  H = {h}   g pertence H
+
+* Algoritmo de Aprendizagem:
+
+**Espaço de Hipóteses**  +  **Algoritmo de Aprendizagem**  =  **Modelo de Aprendizagem**
+
+![2021-05-15-10-25-www.datascienceacademy.com.br](/home/mateus/Downloads/2021-05-15-10-25-www.datascienceacademy.com.br.png)
+
+  
+
 ## 10.17 - Algoritmos de Machine Learning
+
+![algoritmoMachinaLearn01](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmoMachinaLearn01.png)
+
+**Algoritmos de Regressão**
+
+![AlgoritmosRegressao](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/AlgoritmosRegressao.png)
+
+
+
+**Algoritmos Regulatórios**
+
+![algoritmosregulatorios](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmosregulatorios.png)
+
+
+
+
+
+**Algoritmos Baseados em Instâncias (Instance-based)**
+
+
+
+![AlgoritmosBaseadosInstancia](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/AlgoritmosBaseadosInstancia.png)
+
+
+
+**Algoritmos de Árvore de Decisão**
+
+![algoritmoArvoreDecisao](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmoArvoreDecisao.png)
+
+
+
+**Algoritmos Bayesianos**
+
+![algoritmosBayesianos](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmosBayesianos.png)
+
+
+
+**Algoritmos de Clustering**
+
+![algoritmosClustering](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmosClustering.png)
+
+**Algoritmos Baseados em Regras de Associação**
+
+![algoritmoBaseadoRegraAssociacao](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmoBaseadoRegraAssociacao.png)
+
+
+
+**Redes Neurais Artificiais**
+
+correspôndencia de padrões
+
+![redesNeuraisCorrespondenciaPadroes](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/redesNeuraisCorrespondenciaPadroes.png)
+
+**Deep Learning** 
+
+Conceituação e métodos modernos para redes neurais maiores e mais complexas
+
+![DeepLearning](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/DeepLearning.png)
+
+
+
+**Algoritmos de Redução de Dimensionalidade**
+
+de forma não supervisionada, para resumir com menos informações
+
+![algoritmoReducaoDimensionalidade](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmoReducaoDimensionalidade.png)
+
+
+
+**Algoritmos Ensemble**
+
+![algoritmoEnsemble](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/algoritmoEnsemble.png)
+
+
+
+**Outros Algoritmos e Modelos**
+
+![outrosAlgoritmosModelos](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/outrosAlgoritmosModelos.png)
+
+
 
 ## 10.18 - Machine Learning Workflow
 
+<hr>
+
+Fluxo de trabalho - Aquilo que precisa ser feito para se trabalhar de forma efetiva com aprendizado de máquina
+
+**É um conjunto de Etapas que sistematicamente transforma e processa dados a fim de criar soluções preditivas**
+
+As etapas necessárias dentro deste Fluxo de Trabalho: 
+
+1. Business Problem (problema de negócio)
+2. Preparação de Dados
+3. Seleção do Algoritmo
+4. Treinamento do modelo (dividindo os dados em dado de treino e dado de teste)
+5. Teste e Avaliação do Modelo
+
+![etapasWorkFlow](/home/mateus/Documentos/HankPessoa-teorias-imagens-pesquisas/etapasWorkFlow.png)
+
+ **Dicas:**
+
+1. A etapa de preparção dos dados é uma das mais importantes. Lembre-se: a qualidade dos seus _outputs_ será equivalente a qualidade dos seus _inputs_.
+2.  À medida que você caminha pelo processo, percebe a necessidade de modificar etapas anteriores. Isso é normal e esperado.
+3. Os Dados raramente virão prontos, organizados e limpos. É o nosso trabalho fazer isso.
+4. Mais dados = Melhores resultados - Por isso BIG DATA está revolucionando o mundo!!!
+5. Não perca tempo com uma solução ruim. Avalie, otimize e se perceber que o resultado esperado não será alcançado, descarte e comece novamente!
+
 ## 10.19 - Business Problem - Definindo o Problema de Negócio
-
-
-
-
-
-
-
-
-
-​				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
