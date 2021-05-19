@@ -452,3 +452,26 @@ As etapas necessárias dentro deste Fluxo de Trabalho:
 
 ## 10.19 - Business Problem - Definindo o Problema de Negócio
 
+**Definindo os Objetivos:**
+
+* Definir o escopo;
+* Definir os níveis de performance do modelo preditivo;
+* Definir o contexto;
+* Definir como a solução será criada;
+
+"Se você não sabe para onde vai, qualquer caminho serve!"
+
+**Exemplo proposto:**
+
+*Prever se uma pessoa irá desenvolver diabetes*
+
+* Definir as fontes de dados;
+* Compreender os atributos dos dados coletados;
+* Selecionar as ferramentas de análise mais adequadas;
+* Definir o resultado esperado. Neste caso: Verdadeiro ou Falso;
+* Definir o nível de acurácia: 70% de precisão.
+
+<hr>
+
+Fim da primeira parte;
+
